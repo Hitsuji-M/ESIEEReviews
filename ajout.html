@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8" >
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>ESIEEReviews</title>
+        <link href="css/style.css" rel="stylesheet">
+        <link href="css/ajout.css" rel="stylesheet">
+        <link href="assets/favicon.ico" rel="icon" type="image/icon type">
+    </head>
+
+    <body>
+        <header>
+            <nav>
+                <a href="index.html">
+                    <img src="" alt="Logo">
+                </a>
+                <div>
+                    <a href="index.html">Accueil</a>
+                    <a href="avis.html">Avis</a>
+                    <a href="ajout.html">Partager son avis</a>
+                </div>
+            </nav>
+        </header>
+
+        <main>
+            <section class="section-infos-avis">
+                <h1>Ajouter son avis</h1> 
+
+                <div class="container-list">
+                    <h2>Règles</h2>
+                    <ol>
+                        <li>Soyez respectueux</li>
+                        <li>Ne pas mentionner de nom</li>
+                        <li>Avis contructif au maximum</li> 
+                    </ol> 
+                </div>
+            </section>
+
+            <section>
+                <form method="get" action="#">
+                    <div class="form-inf-obl">
+                        <div class="form-column">
+                            <label for="cat">Catégorie <span class="obl">*</span></label>
+                            <select name="cat" id="cat">
+                                <option value="">Choisissez une catégorie</option>
+                                <option value="filiere">Filière</option>
+                                <option value="elective">Elective</option>
+                                <option value="autre">Autre</option>
+                            </select>
+                        </div>
+                        <div class="form-column">
+                            <label for="nom-opt">Nom <span class="obl">*</span></label>
+                            <input type="text" name="nom-opt" id="nom-opt" >
+                        </div>
+                    </div>
+
+                    <div class="form-inf-aux">
+                        <div class="form-column">
+                            <label for="annee">Année</label>
+                            <select name="annee" id="annee">
+                                <option value="">Choisissez une année</option>
+                                <option value="un">E1</option>
+                                <option value="deux">E2</option>
+                                <option value="trois">E3</option>
+                                <option value="quatre">E4</option>
+                                <option value="cinq">E5</option>
+                                <option value="autre">Autre</option>
+                            </select>
+                        </div>
+                        <div class="form-column"> <!-- Flemme de faire les listes -->
+                            <label for="nom-opt">Filière</label>
+                            <input type="text" name="nom-opt" id="nom-opt">
+                        </div> 
+                    </div>
+
+                    <div class="form-perso">
+                        <div class="form-column">
+                            <label for="email">Email <span class="obl">*</span></label>
+                            <input type="email" name="email" id="email" >
+                        </div>
+                        <div class="form-column">
+                            <label for="titre">Titre <span class="obl">*</span></label>
+                            <input type="text" name="titre" id="titre" >
+                        </div>
+                    </div>
+
+                    <label for="avis">Avis</label>
+                    <textarea name="avis" id="avis" rows="10"></textarea>
+                    <input type="submit" value="ENVOYER" class="btn">
+                </form>
+            </section>
+
+        </main>
+
+        <footer>
+
+        </footer>
+    </body>
+</html>

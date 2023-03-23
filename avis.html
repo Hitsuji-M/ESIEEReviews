@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>ESIEEReviews</title>
+        <link href="css/style.css" rel="stylesheet">
+        <link href="css/avis.css" rel="stylesheet">
+        <link href="assets/favicon.ico" rel="icon" type="image/icon type">
+    </head>
+
+    <body>
+        <header>
+            <nav>
+                <a href="index.html">
+                    <img src="" alt="Logo">
+                </a>
+                <div>
+                    <a href="index.html">Accueil</a>
+                    <a href="avis.html">Avis</a>
+                    <a href="ajout.html">Partager son avis</a>
+                </div>
+            </nav>
+        </header>
+
+        <main>
+           <h1>Liste des avis</h1>
+           
+           <section>
+            <div>
+                    <form method="get" action="#">
+                        <div class="form-column">
+                            <label for="filiere">Filière</label>
+                            <select name="filiere" id="filiere">
+                                <option value="all">Toutes</option>
+                                <option value="inf">INF</option>
+                                <option value="cyb">CYB</option>
+                                <option value="dsia">DSIA</option>
+                                <option value="aic">AIC</option>
+                                <option value="autres">Autres</option>
+                            </select>
+                        </div>
+
+                        <div class="form-column">
+                            <label for="annee">Année</label>
+                            <select>
+                                <option value="all">Toutes</option>
+                                <option value="un">E1</option>
+                                <option value="deux">E2</option>
+                                <option value="trois">E3</option>
+                                <option value="quatre">E4</option>
+                                <option value="cinq">E5</option>
+                            </select>
+                        </div>
+                    </form>
+            </div>
+            </main>
+        </section>
+
+        <section class="list-avis">
+            <div class="avis">
+                <h3>Titre de l'avis</h3>
+                <div class="list-tags">
+                    <div class="tag">année</div>
+                    <div class="tag">nom-filière</div>
+                    <div class="tag">nom</div>
+                    <div class="tag">catégorie</div>
+                </div>
+                <div class="text-avis">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas et eleifend dui,
+                        viverra porttitor nisl. Sed nec dolor vitae leo condimentum rhoncus. Nullam maximus
+                        quis quam sed iaculis. Maecenas consectetur nulla non laoreet eleifend. Ut malesuada
+                        massa in lacus volutpat, quis rutrum odio laoreet. Praesent hendrerit velit nec
+                        pellentesque ornare. Donec eu volutpat nisi. Fusce fringilla, massa ut sagittis
+                        efficitur, magna arcu ullamcorper risus, quis egestas libero orci sed nibh. 
+                    </p>
+                </div>
+            </div>
+
+            <div class="avis">
+                <h3>Titre de l'avis</h3>
+                <div class="list-tags">
+                    <div class="tag">nom</div>
+                    <div class="tag">catégorie</div>
+                </div>
+                <div class="text-avis">
+                    <p>
+                        Etiam pellentesque pellentesque libero sit amet fringilla. Integer non malesuada augue,
+                        a fermentum neque. Nulla ac lacus tempus ante porta scelerisque. Morbi ornare conguelibero,
+                        vel mattis nunc auctor a. Curabitur aliquet ipsum a massa mattis, quis placerat elit accumsan.
+                        Mauris scelerisque dolor odio, at tempor lacus euismod eu. Fusce auctor ac massa a lobortis.
+                        Phasellus ultrices sit amet dui quis tincidunt.
+                    </p>
+                </div>
+            </div>
+        </section>
+    </body>
+</html>

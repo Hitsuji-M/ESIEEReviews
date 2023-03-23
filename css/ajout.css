@@ -1,0 +1,64 @@
+.section-infos-avis {
+    text-align: center; 
+    margin-top: 25px;
+}
+
+.container-list {
+    margin-top: 30px;
+    text-align: center;
+}
+  
+.container-list ol {
+    display: inline-block;
+    text-align: left;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #BFACE2;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    margin: auto;
+    color: white;
+}
+  
+.form-perso, .form-inf-obl, .form-inf-aux {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+  
+.form-column {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+  
+input,
+textarea {
+    padding: 10px;
+    border-radius: 3px;
+    border: none;
+}
+  
+label {
+    margin-bottom: 10px;
+}
+  
+input[type='submit'] {
+    width: 200px;
+    margin: auto;
+    margin-top: 30px;
+}
+
+.obl {
+    color: red;
+}
+
+@media screen and (max-width: 1200px) {
+    .form-perso, .form-inf-obl, .form-inf-aux {
+        flex-direction: column;
+    }
+}

@@ -1,0 +1,85 @@
+h1 {
+    margin-top: 15px;
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: row;
+    width: 40%;
+    margin: auto;
+    color: white;
+    gap: 15px;
+}
+  
+.form-column {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+label {
+    margin-bottom: 10px;
+}
+
+/*
+CSS pour les avis
+*/
+
+.list-avis {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.avis {
+    color: black;
+    background-color: rgb(247, 241, 241);
+    width: 35%;
+    border-radius: 25px;
+    padding: 25px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 5px
+}
+
+.avis h3 {
+    border-bottom: solid 1px black;
+}
+
+.list-tags {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    flex-wrap: wrap;
+}
+
+.tag {
+    background-color: lightgray;
+    font-weight: bold;
+    padding: 3px 10px 3px 10px;
+    border-radius: 10px;
+    opacity: 0.9;
+}
+
+.text-avis {
+    text-align: justify;
+}
+
+@media screen and (max-width:1000px) {
+    form {
+        flex-direction: column;
+        gap: 0px;
+    }
+
+    .list-avis {
+        width: 80%;
+        margin: auto;
+    }
+
+    .avis {
+        width: 80%;
+    }
+}
